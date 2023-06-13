@@ -33,8 +33,8 @@ public class ProdutosTest {
     public void testNaoEPermitidoRegistrarValorIgualAZero() {
 
         String mensagemApresentada = new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("informe usuario")
+                .informarASenha("informe senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("Macbook Pro")
@@ -50,8 +50,8 @@ public class ProdutosTest {
     @DisplayName("Não é permitido registrar um produto com valor maior a 7 mil")
     public void testNaoEPermitidoRegistrarValorMaiorQueSeteMil(){
        String mensagemApresentada = new LoginPage(navegador)
-               .informarOUsuario("admin")
-               .informarASenha("admin")
+               .informarOUsuario("informe usuario")
+               .informarASenha("informe senha")
                .submeterFormularioDeLogin()
                .acessarFormularioAdicaoNovoProduto()
                .informarNomeDoProduto("Notebook")
@@ -67,8 +67,8 @@ public class ProdutosTest {
     @DisplayName("Posso adicionar produtos que tenham valor 0,01")
     public void testPossoAdicionarProdutosComValorDeUmCentavo(){
         String mensagemApresentada = new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("informe usuario")
+                .informarASenha("informe senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("Kindle")
@@ -84,8 +84,8 @@ public class ProdutosTest {
     @DisplayName("Posso adicionar produtos que tenham valor 7.000,00")
     public void testPossoAdicionarProdutosComValorDeSeteMilReais(){
         String mensagemApresentada = new LoginPage(navegador)
-                .informarOUsuario("admin")
-                .informarASenha("admin")
+                .informarOUsuario("informe usuario")
+                .informarASenha("informe senha")
                 .submeterFormularioDeLogin()
                 .acessarFormularioAdicaoNovoProduto()
                 .informarNomeDoProduto("Iphone 8")
